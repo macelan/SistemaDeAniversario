@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rel" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="52c7257d-a470-4e06-aa38-768939557db1">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YmFuY28ub3JjYW1lbnRvIEFTICwxMDgsMTU1LDJjYTUxZmJiLWMwOWQtNDE4YS05ZTcyLWQ5OTk3
+ZGViYzRjZDs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT banco.orcamento.`dataEvento`,
+	banco.orcamento.`horaEvento`,
+	banco.orcamento.`valorTotal`,
+	banco.orcamento.`valorTotalMaoDeObra`,
+	banco.orcamento.`idCliente`
+FROM banco.orcamento]]>
+	</queryString>
+	<field name="dataEvento" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="dataEvento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orcamento"/>
+	</field>
+	<field name="horaEvento" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.label" value="horaEvento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orcamento"/>
+	</field>
+	<field name="valorTotal" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="valorTotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orcamento"/>
+	</field>
+	<field name="valorTotalMaoDeObra" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="valorTotalMaoDeObra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orcamento"/>
+	</field>
+	<field name="idCliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idCliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orcamento"/>
+	</field>
+	<title>
+		<band height="49" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="40" backcolor="#3D9492" uuid="817ff481-a8b2-41b3-9fd6-13e7ae815e2a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="-20" y="0" width="590" height="40" backcolor="#FFFAFA" uuid="5736bc8d-249c-4bc2-9768-fb98f0e43aca"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Relatório de Orçamento]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="64" backcolor="#949385" uuid="17ba5268-3065-4af0-bd22-b6872135da88"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="611bbda7-2a3f-48f8-aa1b-8553f9a7a5a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1134c6da-a21e-4572-8826-62371a6fe1ee"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="0b3e1669-837b-41f5-be6e-920ae065e436">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ba1e6b0-def2-4816-bb27-a24f34786997"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data do Evento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="30" uuid="32e7013f-0c10-4998-bc0c-00a33776ef22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19a487b5-d206-4b83-a89a-36934246f0b5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora do Evento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="100" height="30" uuid="a73cb798-8b84-49b0-a49f-e2f223082c30">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="547f3623-0ae9-4d1a-891f-00f23460c310"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mao de Obra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="84" height="30" uuid="64219fa4-6ab9-4d74-bd2d-94634809d0d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="328e0f73-3360-4d4f-a5f6-9ecd00b2c750"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="31" backcolor="#CEEDE9" uuid="b1a37aa8-0947-4ff5-a9a6-61fbc7a012f7"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="6394f4d4-acb1-4872-8212-9e2ebf1ad1d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1134c6da-a21e-4572-8826-62371a6fe1ee"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idCliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="30" uuid="4f36cd96-a7b8-4e80-94d5-cadcd81dea98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ba1e6b0-def2-4816-bb27-a24f34786997"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataEvento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="d480b130-8d59-4a07-9758-f623596917bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19a487b5-d206-4b83-a89a-36934246f0b5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaEvento}]]></textFieldExpression>
+			</textField>
+			<textField pattern="R$0.00">
+				<reportElement x="340" y="0" width="100" height="30" uuid="01290197-0a85-42eb-a368-8e4b68c3de46">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="547f3623-0ae9-4d1a-891f-00f23460c310"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorTotalMaoDeObra}]]></textFieldExpression>
+			</textField>
+			<textField pattern="R$0.00">
+				<reportElement x="460" y="0" width="95" height="30" uuid="25bd8fb8-76cb-4343-974d-dd9d479a834d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="328e0f73-3360-4d4f-a5f6-9ecd00b2c750"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

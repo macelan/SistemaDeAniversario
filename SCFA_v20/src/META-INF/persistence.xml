@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SCFA_v20PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>edu.ifsp.scfa.model.Alimento</class>
+    <class>edu.ifsp.scfa.model.Bebida</class>
+    <class>edu.ifsp.scfa.model.Cliente</class>
+    <class>edu.ifsp.scfa.model.ItemOrcamentoAlimento</class>
+    <class>edu.ifsp.scfa.model.ItemOrcamentoBebida</class>
+    <class>edu.ifsp.scfa.model.Orcamento</class>
+    <class>edu.ifsp.scfa.model.Usuario</class>
+    <class>teste.Usuario</class>
+    <class>edu.ifsp.scfa.model.ItemOrcamentoUtensilio</class>
+    <class>edu.ifsp.scfa.model.Utensilio</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bdswing?useTimezone=true&amp;serverTimezone=UTC "/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="eclipselink.logging.level.sql" value="FINE"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+      <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
